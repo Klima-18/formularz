@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	margin: 0 auto;
+	background-image: linear-gradient(346deg, #02A1F9, #29F19C);
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+.out {
+	background-image: linear-gradient(196deg, #02A1F9, #29F19C);
+	margin: 0 auto;
+	padding-bottom: 120px;
+}
+.out h1 {
+	padding-top: 40px;
+	margin-top: 0;
+	margin-left: 60px;
+	color: white;
+}
+.out .text {
+	margin: 0;
+	margin-top: 15px;
+	margin-left: 60px;
+	color: white;
+}
+.main {
+	width: 92%;
+	margin: auto;
+	margin-top: 50px;
+	background-color: white;
+	border: none;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.lewo {
+	width: 65%;
+	margin: 0;
+	margin-left: 30px;
+	border-right: 1px solid #0278F9;
+	float: left;
+	padding-bottom: 30px;
+}
+.lewo h2 {
+	padding-top: 20px;
+	font-weight: 2000;
+	color: #0278F9;
+	margin: 0;
+}
+.lewo .wiadomosc {
+	color: #0278F9;
+	margin: 0;
+}
+.imie input {
+    width: 400px;
+	height: 50px;
+	margin-bottom: 20px;
+    font-size: 20px;
+	background-color: #93DBF4;
+	border: none;
+	border-radius: 5px;
+}
+.imie ::placeholder {
+	color: #0278F9;
+	background-color: #93DBF4;
+    font-size: 20px;
+}
+.nazwisko input {
+    width: 400px;
+	height: 50px;
+	margin-bottom: 20px;
+    font-size: 20px;
+	background-color:  #93DBF4;
+	border: none;
+	border-radius: 5px;
+}
+.nazwisko ::placeholder {
+	color: #0278F9;
+	background-color: #93DBF4;
+    font-size: 20px;
+}
+.email input {
+    width: 400px;
+	height: 50px;
+	margin-bottom: 20px;
+    font-size: 20px;
+	background-color: #68BCF4;
+	border: none;
+	border-radius: 5px;
+}
+.email ::placeholder {
+	color: #025DF9;
+	background-color: #68BCF4;
+    font-size: 20px;
+}
+.telefon input {
+    width: 400px;
+	height: 50px;
+	margin-bottom: 20px;
+    font-size: 20px;
+	background-color: #68BCF4;
+	border: none;
+	border-radius: 5px;
+}
+.telefon ::placeholder {
+	color: #025DF9;
+	background-color: #68BCF4;
+    font-size: 20px;
+}
+.miasto input{
+    width: 400px;
+	height: 50px;
+	margin-bottom: 20px;
+    font-size: 20px;
+	background-color: #3084F4;
+	border: none;
+	border-radius: 5px;
+}
+.miasto ::placeholder {
+	color: #1709BA;
+	background-color: #3084F4;
+    font-size: 20px;
+}
+.kod input{
+    width: 400px;
+	height: 50px;
+	margin-bottom: 20px;
+    font-size: 20px;
+	background-color: #3084F4;
+	border: none;
+	border-radius: 5px;
+}
+.kod ::placeholder {
+	color: #1709BA;
+	background-color: #3084F4;
+    font-size: 20px;
+}
+.radio input{
+    width: 15px;
+	height: 15px;
+	margin-bottom: 20px;
+    font-size: 20px;
+	background-color: #3084F4;
+}
+.radio input mez {
+	margin-right: 20px;
+}
+.tekst input, .tekst textarea{
+    width: 400px;
+	height: 50px;
+	margin-bottom: 20px;
+    font-size: 20px;
+	background-color: #3084F4;
+	border: none;
+	border-radius: 5px;
+}
+.tekst ::placeholder {
+	color: #1709BA;
+	background-color: #3084F4;
+    font-size: 24px;
+}
+.imie {
+	float: left;
+	margin-right: 30px;
+	width: 404px;
+}
+.nazwisko {
+	float: left;
+	margin-right: 30px;
+	width: 404px;
+}
+.email {
+	float: left;
+	margin-right: 30px;
+	width: 404px;
+}
+.telefon {
+	float: left;
+	margin-right: 30px;
+	width: 404px;
+}
+.miasto {
+	float: left;
+	margin-right: 30px;
+	width: 404px;
+}
+.kod {
+	float: left;
+	margin-right: 30px;
+	width: 404px;
+}
+.radio {
+	float: left;
+	margin-right: 30px;
+	width: 404px;
+}
+.tekst {
+	float: left;
+	margin-right: 30px;
+}
+.formularz .regulamins {
+    text-align: left;
+	width: 50%;
+	margin-top: -10px;
+	float: left;
+}
+.regulamins a {
+	text-decoration: none;
+	color: #3084F4;
+}
+.formularz button {
+    width: 100px;
+    height: 30px;
+    background-color: #29F19C;
+    color: white;
+    border: none;
+	border-radius: 10px;
+    transition-duration: 0.4s;
+    font-size: 16px;
+	float: left;
+	margin-right: 30px;
+	margin-top: -10px;
+}
+.formularz button:hover {
+    background-color: #29F19C;
+}
+.prawo {
+	width: 30%;
+	margin: 0;
+	float: left;
+	text-align: center;
+}
+.prawo h2 {
+	padding-top: 20px;
+	font-weight: 2000;
+	color: #0278F9;
+	margin: 0;
+}
+.prawo hr {
+	width: 80%;
+	background-color: #0278F9;
+	height: 0.2px;
+	margin: auto;
+    border: none;
+}
+.ikony i {
+	color: #0278F9;
+	width: 16px;
+	padding: 5px;
+	background-color: #8EFFE6;
+	border: none;
+	border-radius: 50px;
+	float: left;
+	margin-right: 10px;
+}
+.ikony {
+	width: 80%;
+	margin: 0 auto;
+}
+.ikony p {
+	font-size: 14px;
+	line-height: 26px;
+	text-align: left;
+	margin: 25px 0;
+}
+.ikony a {
+	text-decoration: none;
+	color: black;
+}
+.ikony a:hover {
+	text-decoration: none;
+	color: #0278F9;
+}
+.socials i {
+	color: #0278F9;
+	font-size: 30px;
+	padding: 10px;
+	background-color: #8EFFE6;
+	border: none;
+	border-radius: 50px;
+	margin: 0 10px 0 10px;
+}

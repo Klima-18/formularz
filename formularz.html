@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang=pl-PL>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Klima">
+        <link href="main.css" rel="stylesheet" />
+		<link rel="icon" href="https://cdn.discordapp.com/attachments/897152028218892329/897499099866214470/samurai.png">
+        <title>Formularz Kontaktowy</title>
+        <script src="https://kit.fontawesome.com/c2f96de453.js" crossorigin="anonymous"></script>
+    </head>
+	<body>
+		<div class="out">
+			<h1>Skontaktuj się z nami</h1>
+			<p class="text">Jest to formularz kontaktowy.<br/>
+			Cieszymy się że możemy się z tobą skontaktować</p>
+			<div class="main">
+				<div class="lewo">
+					<h2>Wyślij nam wiadomość</h2>
+					<p class="wiadomosc">Wyślij nam wiadomość, a odpowiemy na nią w 24 godziny</p><br/>
+				<div class="formularz">
+						<div class="imie">
+							<input type="text" placeholder=" Imię" id="imie" /><br/>
+						</div>
+						<div class="nazwisko">
+							<input type="text" placeholder=" Nazwisko" id="nazwisko" /><br/>
+						</div>
+						<div class="email">
+							<input type="text" placeholder=" E-mail" id="email" /><br/>
+						</div>
+						<div class="telefon">
+							<input type="number" placeholder=" Telefon" id="telefon" /><br/>
+						</div>
+						<div class="miasto">
+							<input type="text" placeholder=" Miasto" id="miasto" /><br/>
+						</div>
+						<div class="kod">
+							<input type="kod" placeholder=" Kod Pocztowy" id="kod" /><br/>
+						</div>
+						<div class="radio">
+							<input type="radio" value="Mezczyzna" id="mez" name="plec" /><b>Mężczyzna</b>
+							<input type="radio" value="Kobieta" id="kobieta" name="plec" /><b>Kobieta</b><br/>
+						</div>
+						<div class="tekst">
+						<textarea placeholder=" Napisz wiadomość ..." id="tekst"></textarea>
+						</div>
+					
+					<p class="regulamins"><input type="checkbox" id="regulamin" /> 
+					<b>Akceptuję <a href="#" style="text-decoration: none">regulamin</a> formularza kontaktowego</b></p>
+				
+				<button onclick="wyslij()"><b>WYŚLIJ</b></button>
+				</div>
+				
+					<p id="p1"></p>
+					
+				</div>
+				<script>
+				function wyslij() {
+					var imie=document.getElementById("imie").value;
+					
+					var nazwisko=document.getElementById("nazwisko").value;
+					
+					var email=document.getElementById("email").value;
+					
+					var telefon=document.getElementById("telefon").value;
+					
+					var miasto=document.getElementById("miasto").value;
+					
+					var kod=document.getElementById("kod").value;
+					
+					var plec1=document.getElementById("mez").checked;
+					var plec2=document.getElementById("kobieta").checked;
+					
+					var tekst=document.getElementById("tekst").value;
+					
+					var regulamin=document.getElementById("regulamin").checked;
+					
+					const reg = /^[A-Z]{1}[a-z]*$/;
+					const regmail = /^[a-zA-Z0-9]{1}[a-zA-Z0-9\.-_]*[a-zA-Z0-9]+@[a-zA-Z0-9]{1}[a-zA-Z0-9\.-]*(\.[a-zA-Z]{2,})$/i;
+					const regtel = /^[0-9]{9}$/;
+					const regmiasto = /^[A-Z]{1}[a-z]*$/;
+					const regkod = /^[0-9]{2}-[0-9]{3}$/;
+					
+					if (imie.match(reg) != null && nazwisko.match(reg) != null && email.match(regmail) != null && telefon.match(regtel) != null && regulamin==1) {
+						if (plec1==1) {
+						document.write(
+						 "<b>Nazywasz się:</b> "+imie+" "+nazwisko+
+						    "<br/><b>Twój email to:</b> "+email+
+							"<br/><b>Twoja płeć to:</b> "+"Mężczyzna"+
+						    "<br/><b>Twój telefon to:</b> "+telefon+
+							"<br/><b>Mieszkasz w:</b> "+miasto+" "+kod+
+							"<br/><b>Treść wiadomości:</b> "+tekst);
+						}
+						else if (plec2==1) {
+						document.write(
+						 "<b>Nazywasz się:</b> "+imie+" "+nazwisko+
+						    "<br/><b>Twój email to:</b> "+email+
+							"<br/><b>Twoja płeć to:</b> "+"Kobieta"+
+						    "<br/><b>Twój telefon to:</b> "+telefon+
+							"<br/><b>Mieszkasz w:</b> "+miasto+" "+kod+
+							"<br/><b>Treść wiadomości:</b> "+tekst);
+						}
+						else {
+						document.write("JD");
+						}
+					
+						//p1.style.color="white"
+						//p1.innerHTML="Nazywasz się: "+imie+""
+						
+						
+						//document.write("Nazywasz się: "+imie+" "+nazwisko+".<br/> Twój mail to: "+email+". Twój tel to: "+telefon);
+					}
+					else {
+						alert("Imie i nazwisko dużą literą! Mail poprawnej konstrukcji, tel min. 9 cyfr, wybierz płeć");
+					}
+				}
+    </script>
+				
+				<div class="prawo">
+					<h2>Informacje Kontaktowe</h2>
+						<br/>
+						<hr/>
+						<br/>
+					<div class="ikony">
+						<i class="fas fa-map-marker-alt"></i>
+						<p>2583 Arthur Avenue <b>Princeton</b> Illinois</p>
+						<i class="fas fa-envelope"></i>
+						<a href="mailto:kubaklimczak204@gmail.com"><p>kontakt.firma@celujący.pl</p></a>
+						<i class="fas fa-phone-alt"></i>
+						<p>773-501-3870</p>
+					</div>
+						<br/>
+						<hr/>
+						<br/>
+					<div class="socials">
+						<a href="https://twitter.com/" rel="noopener" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a href="https://facebook.com" rel="noopener" target="_blank"><i class="fab fa-facebook"></i></a>
+						<a href="https://instagram.com/" rel="noopener" target="_blank"><i class="fab fa-instagram"></i></a>
+						<a href="#" rel="noopener" target="_blank"><i class="fas fa-donate"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
